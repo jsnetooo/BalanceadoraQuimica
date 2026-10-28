@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #80808#DCDCDC0;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="com.example.calculadoraareatriangulo.AreaTrianguloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <ImageView fitHeight="200.0" fitWidth="200.0">
+      <image>
+         <Image url="@imagens/area-triangulo.png" />
+      </image>
+   </ImageView>
+
+    <Label fx:id="lbBase" text="Base:" textFill="#104185">
+      <font>
+         <Font name="Segoe UI Bold" size="24.0" />
+      </font></Label>
+   <TextField fx:id="tfBase" alignment="CENTER" maxWidth="300.0" promptText="Digite o valor da base">
+      <font>
+         <Font name="Segoe UI Bold" size="24.0" />
+      </font>
+   </TextField>
+   <Label fx:id="lbAltura" layoutX="105.0" layoutY="30.0" text="Altura:" textFill="#104185">
+      <font>
+         <Font name="Segoe UI Bold" size="24.0" />
+      </font>
+   </Label>
+   <TextField fx:id="tfAltura" alignment="CENTER" layoutX="30.0" layoutY="67.0" maxWidth="300.0" promptText="Digite o  valor da altura">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </TextField>
+    <Button onAction="#cliqueCalcular" style="-fx-background-color: #104185;" text="CALCULAR" textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Bold" size="24.0" />
+      </font></Button>
+   <Label fx:id="lbResultado" layoutX="160.0" layoutY="250.0" textFill="#0deb32">
+      <font>
+         <Font name="Segoe UI Bold" size="24.0" />
+      </font>
+   </Label>
+</VBox>
