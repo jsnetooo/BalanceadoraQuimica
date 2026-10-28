@@ -32,7 +32,7 @@ public class AreaTrianguloController {
                 lbResultado.setStyle("#eb0e0e");
                 tfBase.clear();
                 tfAltura.clear();
-            }
+            } else{
             try {
                 double base = Double.parseDouble(baseString);
                 double altura = Double.parseDouble(alturaString);
@@ -53,5 +53,6 @@ public class AreaTrianguloController {
             }
 
         }
+    }
     }
 
