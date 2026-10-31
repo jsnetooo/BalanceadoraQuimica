@@ -1,8 +1,8 @@
-module com.example.calculadoraareatriangulo {
+module com.example.balanceadora {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.calculadoraareatriangulo to javafx.fxml;
-    exports com.example.calculadoraareatriangulo;
+    opens com.example.balanceadora to javafx.fxml;
+    exports com.example.balanceadora;
 }
